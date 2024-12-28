@@ -1,0 +1,44 @@
+/* Skills Section Styles */
+.skills-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin: 40px 0; /* Margin for spacing */
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+    color: #3498db; /* Primary color for the heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Spacing between letters */
+    font-weight: 600; /* Slightly bolder font weight */
+  }
+  
+  .skills-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    display: grid; /* Use a grid for better responsiveness and control */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between skills */
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .skill {
+    background-color: #2ecc71; /* Green background for skills */
+    color: #ffffff; /* White text */
+    padding: 15px 20px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2rem; /* Font size for skills */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }
