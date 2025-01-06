@@ -2,63 +2,42 @@ import React, { useState } from 'react';
 import '../css/projects.css';
 
 const Projects = () => {
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState('Web Development Frontend');
 
   const projectsData = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React and Node.js',
-      technologies: ['React'],
+      title: 'Bot Battlr',
+      description: 'An app that allows one to create,add,update and delete bots',
+      technologies: ['React','node.js'],
       className: 'project1',
-      category: 'Web Development',
-      githubLink: '#',
+      category: 'Web Development Frontend',
+      githubLink: 'https://github.com/alvinkamau01/bot_battlr',
       liveLink: '#'
     },
     {
       id: 2,
-      title: 'AI Chatbot',
-      description: 'Machine learning-powered conversational AI assistant',
-      technologies: ['Python', 'TensorFlow', 'Flask'],
+      title: 'University tours',
+      description: 'A collaboratively built app that allows virtual touring of universities in kenya',
+      technologies: ['react','node.js'],
       className: 'project2',
-      category: 'Machine Learning',
-      githubLink: '#',
+      category: 'Web Development Frontend',
+      githubLink: 'https://github.com/azmi-adan/university-tours',
       liveLink: '#'
     },
     {
       id: 3,
-      title: 'Mobile Fitness Tracker',
-      description: 'Cross-platform fitness tracking mobile application',
-      technologies: ['React Native', 'Firebase'],
+      title: 'Mavs first five',
+      description: "An application that allows addition,deletion,update and viewing of players on the roster of players on the mavericks dallas, a basketball team's, first five",
+      technologies: ['Python', 'Flask','Sqlite'],
       className: 'project3',
-      category: 'Mobile Development',
-      githubLink: '#',
-      liveLink: '#'
-    },
-    {
-      id: 4,
-      title: 'Blockchain Voting System',
-      description: 'Secure blockchain-based voting platform',
-      technologies: ['Solidity', 'React', 'Web3.js'],
-      className: 'project4',
-      category: 'Blockchain',
-      githubLink: '#',
-      liveLink: '#'
-    },
-    {
-      id: 5,
-      title: 'Blockchain Voting System',
-      description: 'Secure blockchain-based voting platform',
-      technologies: ['Solidity', 'React', 'Web3.js'],
-      className: 'project4',
-      category: 'Blockchain',
-      githubLink: '#',
+      category: 'Backend Development ',
+      githubLink: 'https://github.com/alvinkamau01/mavs_stats_first_5',
       liveLink: '#'
     }
   ];
 
   const categories = [
-    'All', 
     'Web Development Frontend', 
     'Backend Development ', 
     
@@ -101,7 +80,7 @@ const Projects = () => {
                     <a 
                       href={project.githubLink} 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="noopener"
                       className="project-link"
                     >
                       <i className="fab fa-github"></i>

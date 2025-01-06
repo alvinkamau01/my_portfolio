@@ -21,6 +21,16 @@ function Home() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  const handleCVDownload = () => {
+    const fileUrl = 'https://drive.google.com/file/d/1bUABqzs3W2wa5PIaZ6W3SnHl-oXpil0H/view';
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.setAttribute('download', 'Alvin_Kamau_CV.pdf'); // Specify the file name for the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="landing-page">
       <main className="main-content">
@@ -29,13 +39,9 @@ function Home() {
           <p className="description">
             A Result-Oriented Web Developer building and managing Websites and Web Applications that lead to the success of the overall product.
           </p>
-          <a
-            href="https://res.cloudinary.com/df0vb7dl4/image/upload/v1734981307/Alvin_Kamau_CV_ok9ewc.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="projects-btn">Download CV</button>
-          </a>
+          <button className="projects-btn" onClick={handleCVDownload}>
+            View CV
+          </button>
 
           {/* Conditionally render SocialLinks if not on mobile */}
           {!isMobile && <SocialLinks />}
