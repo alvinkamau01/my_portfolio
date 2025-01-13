@@ -4,6 +4,7 @@ import SocialLinks from './sociallinks';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
+  const [socialLinksLoaded, setSocialLinksLoaded] = useState(false);
 
   useEffect(() => {
     // Function to update state based on window size
@@ -21,8 +22,19 @@ function Home() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  useEffect(() => {
+    // Simulate social links loading
+    const loadSocialLinks = async () => {
+      // Simulate an async operation (e.g., fetching data)
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      setSocialLinksLoaded(true);
+    };
+
+    loadSocialLinks();
+  }, []);
+
   const handleCVDownload = () => {
-    const fileUrl = 'https://drive.google.com/file/d/1bUABqzs3W2wa5PIaZ6W3SnHl-oXpil0H/view';
+    const fileUrl = 'https://ik.imagekit.io/tbor9cyjv0/Alvin_Kamau_CV_usiq06.pdf?updatedAt=1736761480237';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.setAttribute('download', 'Alvin_Kamau_CV.pdf'); // Specify the file name for the download
@@ -43,8 +55,8 @@ function Home() {
             View CV
           </button>
 
-          {/* Conditionally render SocialLinks if not on mobile */}
-          {!isMobile && <SocialLinks />}
+          {/* Conditionally render SocialLinks after loading */}
+          {!isMobile && socialLinksLoaded && <SocialLinks />}
         </div>
       </main>
 

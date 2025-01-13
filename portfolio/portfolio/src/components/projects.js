@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect} from 'react';
 import '../css/projects.css';
 
 const Projects = () => {
   const [filter, setFilter] = useState('Web Development Frontend');
-
+ 
   const projectsData = [
     {
       id: 1,
