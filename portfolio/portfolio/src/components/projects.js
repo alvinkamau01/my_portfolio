@@ -34,6 +34,16 @@ const Projects = () => {
       category: 'Backend Development ',
       githubLink: 'https://github.com/alvinkamau01/mavs_stats_first_5',
       liveLink: '#'
+    },
+    {
+      id: 4,
+      title: 'Music Backend',
+      description: "An application that allows addition,deletion,update and viewing of music tracks through a mobile application",
+      technologies: ['Python', 'Flask','Sqlite'],
+      className: 'project4',
+      category: 'Backend Development ',
+      githubLink: 'https://github.com/alvinkamau01/music_backend_app',
+      liveLink: 'https://music-app-1-d8ws.onrender.com/'
     }
   ];
 
