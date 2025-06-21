@@ -38,18 +38,39 @@ const Projects = () => {
     {
       id: 4,
       title: 'Music Backend',
-      description: "An application that allows addition,deletion,update and viewing of music tracks through a mobile application",
+      description: "An application that allows addition,deletion,update and viewing of music tracks through a mobile application through RESTful API endpoints",
       technologies: ['Python', 'Flask','Sqlite'],
       className: 'project4',
       category: 'Backend Development ',
       githubLink: 'https://github.com/alvinkamau01/music_backend_app',
       liveLink: 'https://music-app-1-d8ws.onrender.com/'
+    },
+    {
+      id: 5,
+      title: 'Heroes Backend',
+      description: "A RESTful API backend service that manages a collection of heroes. The application implements full CRUD operations allowing users to create, read, update, and delete hero records",
+      technologies: ['Python', 'Flask','Sqlite'],
+      className: 'project5',
+      category: 'Backend Development ',
+      githubLink: 'https://github.com/alvinkamau01/code_challenge_1_phase_4.git',
+      liveLink: ''
+    },
+    {
+      id: 6,
+      title: 'CiraLuxe',
+      description: "An application that allows the client to ran an online store for their products",
+      technologies: ['React','node.js','Firestore'],
+      className: 'project6',
+      category: 'Full Stack Development',
+      githubLink: 'https://github.com/alvinkamau01/cira_luxe.git',
+      liveLink: 'https://cira-luxe-alvinkamau01-alvinkamau01s-projects.vercel.app/'
     }
   ];
 
   const categories = [
     'Web Development Frontend', 
-    'Backend Development ', 
+    'Backend Development ',
+    'Full Stack Development',
     
   ];
 
