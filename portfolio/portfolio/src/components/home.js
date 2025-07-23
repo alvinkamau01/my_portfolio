@@ -34,7 +34,7 @@ function Home() {
   }, []);
 
   const handleCVDownload = () => {
-    const fileUrl = 'https://ik.imagekit.io/tbor9cyjv0/Alvin_Kamau_CV_usiq06.pdf?updatedAt=1736761480237';
+    const fileUrl = 'https://drive.google.com/file/d/1WsvHMc7uG1LITEiXYn3sQMdD-LeqgIh9/view?usp=sharing';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.setAttribute('download', 'Alvin_Kamau_CV.pdf'); // Specify the file name for the download
