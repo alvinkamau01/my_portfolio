@@ -82,12 +82,32 @@
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  display: flex;
+  overflow-x: auto;
   gap: 40px;
   padding: 0 20px;
-  margin-right:70px;
-  margin-left:70px
+  margin-right: 70px;
+  margin-left: 70px;
+  scrollbar-width: thin;
+  scrollbar-color: #6a11cb #f5f7fa;
+}
+
+.projects-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: #f5f7fa;
+  border-radius: 10px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background: #6a11cb;
+  border-radius: 10px;
+}
+
+.projects-grid::-webkit-scrollbar-thumb:hover {
+  background: #2575fc;
 }
 
 .project-card {
@@ -98,6 +118,8 @@
   transition: all 0.4s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
+  width: 320px;
+  flex-shrink: 0;
 }
 
 .project-card:hover {
@@ -138,6 +160,16 @@
 
 .project6 {
   background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  height: 200px;
+}
+
+.project7 {
+  background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
+  height: 200px;
+}
+
+.project8 {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
   height: 200px;
 }
 
@@ -207,8 +239,13 @@
 
 @media (max-width: 768px) {
   .projects-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    overflow-x: visible;
     gap: 30px;
+  }
+
+  .project-card {
+    width: 100%;
   }
 
   .section-title {
