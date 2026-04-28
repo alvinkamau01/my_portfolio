@@ -1,0 +1,50 @@
+/* Contact Section Styles */
+.contact-section {
+    padding: 60px 20px; /* Padding for spacing */
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    text-align: center; /* Center align text */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin: 40px 0; /* Margin for spacing */
+  }
+  
+  .contact-section h2 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #3498db; /* Primary color for the heading */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 2px; /* Spacing between letters */
+  }
+  
+  .contact-section p {
+    font-size: 1.2rem; /* Font size for contact information */
+    margin: 10px 0; /* Margin for spacing between paragraphs */
+    line-height: 1.5; /* Line height for readability */
+  }
+  
+  .contact-section a {
+    color: #2ecc71; /* Green color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .contact-section a:hover {
+    color: #3498db; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover for emphasis */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 40px 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .contact-section h2 {
+      font-size: 2rem; /* Smaller font size for the heading */
+    }
+  
+    .contact-section p {
+      font-size: 1rem; /* Smaller font size for contact information */
+    }
+  }

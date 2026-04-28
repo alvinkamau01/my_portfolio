@@ -1,0 +1,66 @@
+/* Main App Styles */
+.App {
+  text-align: center; /* Center align text */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Choose a more visually appealing font */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  min-height: 100vh; /* Ensure the application takes up full viewport height */
+  background-color: #f0f0f0; /* Light background for a clean look */
+  color: #333; /* Dark grey color for text */
+  padding: 20px; /* Add padding for better visual separation */
+  box-sizing: border-box; /* Ensure padding is included in the element's total width/height */
+}
+
+/* Logo Styles */
+.App-logo {
+  height: 40vmin; /* Responsive logo height */
+  pointer-events: none; /* Prevent interaction with the logo */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Animation for the logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear; /* Spin animation */
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #282c34; /* Dark background for contrast */
+  min-height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white; /* White text for readability */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Fragment Styles */
+.fragment {
+  margin-top: 20px; /* Space above fragments */
+}
+
+/* Link Styles */
+.App-link {
+  color: #61dafb; /* Light blue color for links */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.App-link:hover {
+  color: #21a1f1; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Keyframes for logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); /* Start rotation */
+  }
+  to {
+    transform: rotate(360deg); /* End rotation */
+  }
+}

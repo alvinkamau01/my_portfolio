@@ -1,0 +1,135 @@
+/* General Styling for About Section */
+.about-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+}
+
+.about-subtitle {
+  font-size: 18px;
+  color: #555;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-info {
+  flex: 2;
+  max-width: 600px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  margin-top: 30px;
+}
+
+.skills-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.skills-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.skills-list li svg {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.cta-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cta-link {
+  font-size: 18px;
+  color: #075E54;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid  #075E54;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-link:hover {
+  background-color: #075E54;
+  color: white;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 30px;
+  }
+
+  .about-info {
+    max-width: 100%;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
