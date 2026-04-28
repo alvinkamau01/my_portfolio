@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaCode, FaReact, FaNodeJs, FaPython, FaGithub,FaWhatsapp } from 'react-icons/fa';
+import { FaCode, FaReact, FaPython, FaWhatsapp } from 'react-icons/fa';
 import '../css/about.css';
 
 const About = () => {
